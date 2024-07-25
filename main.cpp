@@ -63,7 +63,9 @@ size_t Automaton::find_first_match(const std::string& str)
 
 int main()
 {
+    /* Pattern string */
     std::string p = "hack";
+    /* String to search for the pattern string */
     std::string s = "hhhackerrank";
     Automaton a = Automaton(p);
     auto first_match = a.find_first_match(s);
